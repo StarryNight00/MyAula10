@@ -12,11 +12,15 @@ namespace Agents
             char dir = Convert.ToChar(Console.ReadLine());
 
             return dir;
+
+            /* Sem variáveis
+             * 
+             * Console.Write("Direção: ");
+             * return Console.ReadLine().ToUpper()[0];
+             * 
+             */
         }
 
-        public override string ToString()
-        {
-            return $"I'm a Player and my name is {Name}";
-        }
+        public override string ToString() => $"I'm a Player and my name is {Name}";
     }
 }
