@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agents", "Agents\Agents.csproj", "{61102601-B394-4FE6-BBF2-9A813342669A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agents", "Agents\Agents.csproj", "{61102601-B394-4FE6-BBF2-9A813342669A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{302D72D1-DABD-42FD-B9F8-DD1CE590543D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimInterf", "AnimInterf\AnimInterf.csproj", "{10253B9D-F621-4714-8610-9D4DBEABC186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{61102601-B394-4FE6-BBF2-9A813342669A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61102601-B394-4FE6-BBF2-9A813342669A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61102601-B394-4FE6-BBF2-9A813342669A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302D72D1-DABD-42FD-B9F8-DD1CE590543D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302D72D1-DABD-42FD-B9F8-DD1CE590543D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302D72D1-DABD-42FD-B9F8-DD1CE590543D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302D72D1-DABD-42FD-B9F8-DD1CE590543D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10253B9D-F621-4714-8610-9D4DBEABC186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10253B9D-F621-4714-8610-9D4DBEABC186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10253B9D-F621-4714-8610-9D4DBEABC186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10253B9D-F621-4714-8610-9D4DBEABC186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
