@@ -6,8 +6,13 @@ namespace AnimInterf
 {
     class Cat : Animal, IMammal
     {
-        public int NumberOfNipples => 6;
+        public int NumberOfNipples { get; }
         public override string Sound() => "Miau!";
+
+        public Cat()
+        {
+            NumberOfNipples = 8;
+        }
 
         public override string ToString()
         {
@@ -15,4 +20,4 @@ namespace AnimInterf
         }
     }
 }
-}
+

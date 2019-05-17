@@ -6,23 +6,43 @@ namespace AnimInterf
     {
         static void Main(string[] args)
         {
+            //Inicializar variáveis
+            const int nAnimals = 10;
             Random rnd = new Random();
-            Animal[] animals = new Animal[10];
+            Animal[] animals = new Animal[nAnimals];
 
-            foreach (Animal i in animals)
+            //Inicializar conteúdos array
+            for (int i = 0; i < nAnimals; i++)
             {
-                int choice = rnd.Next(4);
+                switch (rnd.Next(4))
+                {
+                    case 0:
+                        animals[i] = new Dog();
+                        break;
+                    case 1:
+                        animals[i] = new Cat();
+                        break;
+                    case 2:
+                        animals[i] = new Bat();
+                        break;
+                    case 3:
+                        animals[i] = new Bee();
+                        break;
+                }
 
-                if (choice == 0) animals[i] = new Dog();
-                if (choice == 1) animals[i] = new Cat();
-                if (choice == 2) animals[i] = new Bat();
-                if (choice == 3) animals[i] = new Bee();
             }
 
-            foreach (Animal i in animals)
+
+            //Percorrer Array
+            foreach (Animal a in animals)
             {
-                Console.WriteLine($"This animal is a {i}");
+                Console.WriteLine($"\n\nThis animal is a {a}");
+                string nipples = a is IMammal ? "\nNum of nipples = " + (a as IMammal).NumberOfNipples : "";
+                string wings = a is ICanFly ? "\nNum of wings = " + (a as ICanFly).NumberOfWings : "";
+                Console.WriteLine("It makes " + a.Sound() + nipples + wings);
             }
+
+            Console.ReadKey();
 
         }
     }
