@@ -6,6 +6,8 @@ namespace Agents
 {
     class Player : Agent
     {
+        public Player(string name) : base(name) { }
+
         public override char Move()
         {
             Console.WriteLine("Which Direction? N, S, W or E");

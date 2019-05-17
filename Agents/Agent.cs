@@ -11,6 +11,9 @@ namespace Agents
 
         public abstract char Move();
 
-
+        public Agent (string name)
+        {
+            Name = name;
+        }
     }
 }

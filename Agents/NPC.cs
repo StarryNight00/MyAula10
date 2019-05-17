@@ -10,7 +10,7 @@ namespace Agents
         //possivel ser string em vez de char
         private readonly char[] direction;
 
-        public NPC()
+        public NPC(string name):base(name)
         {
             //variante string: direction = "NSWE";
             direction = new char[] { 'N', 'S', 'W', 'E' };
